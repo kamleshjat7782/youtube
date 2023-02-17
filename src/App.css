@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+/* #############   Slidebar    ######################## */
+
+.logo{
+    height: 50px;
+
+}
+.logo img{
+    height: 50px;
+}
+
+.kam{
+    color: red;
+}
