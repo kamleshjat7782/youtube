@@ -24,13 +24,9 @@ export const logo = 'https://i.ibb.co/s9Qys2j/logo.png'
 
 export const categories = [
     { name: 'New', icon: <HomeIcon />, },
-    { name: 'JS Mastert', icon: <CodeIcon />, },
-    { name: 'Coding', icon: <CodeIcon />, },
-    { name: 'ReactJS', icon: <CodeIcon />, },
-    { name: 'NextJS', icon: <CodeIcon />, },
+    { name: 'Shorts', icon: <CodeIcon />, },
+    { name: 'Trending', icon: <CodeIcon />, },
     { name: 'Music', icon: <MusicNoteIcon />, },
-    { name: 'education', icon: <SchoolIcon />, },
-    { name: 'Podcast', icon: <GraphicEqIcon />, },
     { name: 'Movie', icon: <OndemandVideoIcon />, },
     { name: 'gaming', icon: <SportsEsportsIcon />, },
     { name: 'Live', icon: <LiveTvIcon />, },
@@ -38,6 +34,8 @@ export const categories = [
     { name: 'Fashion', icon: <CheckroomIcon />, },
     { name: 'Beauty', icon: <FaceRetouchingNaturalIcon />, },
     { name: 'Comedy', icon: <TheaterComedyIcon />, },
+    { name: 'education', icon: <SchoolIcon />, },
+    { name: 'Podcast', icon: <GraphicEqIcon />, },
     { name: 'Gym', icon: <FitnessCenterIcon />, },
     { name: 'Crypto', icon: <DeveloperModeIcon />, },
     
