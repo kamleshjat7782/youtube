@@ -11,7 +11,7 @@ const Navbar = () => {
         direction="row" 
         alignItems="center"
         p={2} 
-        sx={{ position: 'sticky', background: '#000', top: '0',    }} 
+        sx={{ position: 'sticky', background: '#000', top: '0', }} 
         >
           <Link to='/youtube' className='logo'>
             <img src={logo} alt='logo' />
