@@ -11,12 +11,16 @@ const VideoDetail = () => {
 
   const [VideoDetail, setVideoDetail] = useState(null);
   const [videos, setVideos] = useState(null);
+  const [data, setData] = useState(null);
   const { id } = useParams();
 
 
   useEffect(() => {
     FetchFromApi(`videos?part=snippet,statistics&id=${id}`)
       .then((data) => setVideoDetail(data.items[0]));
+
+    FetchFromApi(`commentThreads?part=snippet&videoId=${id}`)
+      .then((data) => setData(data));
 
     FetchFromApi(`search?part=snippet&relatedToVideoId=${id}&type=video`)
       .then((data) => setVideos(data.items));
@@ -26,6 +30,7 @@ const VideoDetail = () => {
   return 'Loding...';
 
   const { snippet: { title, channelId, channelTitle }, statistics: {viewCount, likeCount} } = VideoDetail;
+  console.log(data)
 
   return (
     <Box minHeight="95vh">
